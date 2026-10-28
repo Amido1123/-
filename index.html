@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>あみどのホームページ</title>
+<style>
+  body {
+    background: #fffacd url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%23fff8dc"/><path d="M0 0h20v20H0z" fill="%23ffe4b5"/><path d="M20 20h20v20H20z" fill="%23ffe4b5"/></svg>');
+    font-family: "MS PGothic", "Hiragino Kaku Gothic Pro", sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.85);
+    border: 4px double #ff69b4;
+    padding: 20px;
+    box-shadow: 5px 5px 0 #ffb6c1;
+  }
+  h1 {
+    text-align: center;
+    color: #ff1493;
+    text-shadow: 2px 2px #ffd700;
+    font-size: 2.2em;
+  }
+  .marquee {
+    background: #000080;
+    color: #ffff00;
+    padding: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .section {
+    border: 3px ridge #87ceeb;
+    margin: 20px 0;
+    padding: 15px;
+    background: #f0f8ff;
+  }
+  .section h2 {
+    background: #ff69b4;
+    color: white;
+    padding: 5px 10px;
+    margin: -15px -15px 15px -15px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #ff69b4;
+    background: #eee;
+  }
+  .links a {
+    display: inline-block;
+    background: linear-gradient(#87ceeb, #4682b4);
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border: 2px outset #ccc;
+    font-weight: bold;
+  }
+  .links a:hover {
+    background: linear-gradient(#4682b4, #87ceeb);
+  }
+  .under-construction {
+    text-align: center;
+    color: #ff4500;
+    font-weight: bold;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>★ あみどのホームページ ★</h1>
+
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">ようこそ！ 絵を描いたりしています。ゆっくりしていってね〜</marquee>
+  </div>
+
+  <div class="section">
+    <h2>プロフィール</h2>
+    <p>イラストを描いています。  
+    XやBOOTHでも活動中です！</p>
+  </div>
+
+  <div class="section">
+    <h2>作品ギャラリー</h2>
+    <div class="gallery">
+      <!-- ここに自分の画像のパスを入れる -->
+      <img src="images/pic1.jpg" alt="作品1">
+      <img src="images/pic2.jpg" alt="作品2">
+      <img src="images/pic3.jpg" alt="作品3">
+      <img src="images/pic4.jpg" alt="作品4">
+    </div>
+    <p style="text-align:center; font-size:0.9em;">※ 画像は images フォルダに入れてください</p>
+  </div>
+
+  <div class="section">
+    <h2>リンク</h2>
+    <div class="links">
+      <a href="https://x.com/Amido1123" target="_blank">X (Twitter)</a>
+      <a href="https://amido1123.booth.pm/" target="_blank">BOOTH</a>
+      <!-- ↑ BOOTHのURLが違う場合は教えてください -->
+    </div>
+  </div>
+
+  <p class="under-construction">★ 工事中 ★</p>
+
+  <footer>
+    Since 2026 / あみど<br>
+    このページはHTMLで作っています
+  </footer>
+</div>
+</body>
+</html>
